@@ -16,4 +16,5 @@ replacement.inputfile = ARGV[0]
 #出力ファイルの指定
 replacement.outputfile = ARGV[1]
 #データ書き換え
+
 replacement.replace
