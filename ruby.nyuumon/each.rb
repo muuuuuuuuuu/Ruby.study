@@ -31,3 +31,20 @@ end
 170
 :weight
 60
+
+
+値を10倍にしてから加算するコード
+numbers = [1,2,3,4]
+sum = 0
+numbers.each do |n|
+  sum_value = n.even? ? n * 10 : n
+  sum += sum_value
+end
+p sum
+64
+
+numbers = [1,2,3,4,5]
+new_numbers = []
+numbers.each { |n| new_numbers << n * 10}
+p new_numbers
+[10, 20, 30, 40, 50]

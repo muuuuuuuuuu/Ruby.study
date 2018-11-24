@@ -17,3 +17,10 @@
 # a = %I(#{"a" + "b"} #{"c" + "d"})
 # p a
 # [:ab, :cd]
+
+# 配列に初期値を設定する
+p Array.new(5)
+p Array.new(5, 0)
+
+
+[nil, nil, nil, nil, nil]
