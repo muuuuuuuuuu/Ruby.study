@@ -82,39 +82,42 @@ cc = c.map(&:to_i)
 d = aa + bb + cc
 e = d.sort
 p e
-  class Keisan
-    def tai(e)
-      if (e[0] == e[1] && e[0] == e[2] && e[1] == e[2])
-        p e[0..2] = 3
-      elsif e[0] == e[1]
-        p e[0..1] = 3
-        p e[2] = 2
-      elsif e[1] == e[2]
-        p e[0] = 3
-        p e[1..2] = 2
-      else
-        p e[0] = 3
-        p e[1] = 2
-        p e[2] = 1
-      end
-    end
-
-    def height(e)
-      if (e[3] == e[4] && e[3] == e[5] && e[4] == e[5])
-        p e[3..5] = 3 * 10
-      elsif e[3] == e[4]
-        p e[3..4] = 2 * 10
-        p e[5] = 3 * 10
-      elsif e[4] == e[5]
-        p e[3] = 2 * 10
-        p e[4..5] = 3 * 10
-      else
-        p e[3] = 1 * 10
-        p e[4] = 2 * 10
-        p e[5] = 3 * 10
-      end
-    end
-  end
-f = Keisan.new
-p f.tai(e)
-p f.height(e)
+# 180 90
+# 170 60
+# 170 190
+#   class Keisan
+#     def tai(e)
+#       if (e[0] == e[1] && e[0] == e[2] && e[1] == e[2])
+#         p e[0..2] = 3
+#       elsif e[0] == e[1]
+#         p e[0..1] = 3
+#         p e[2] = 2
+#       elsif e[1] == e[2]
+#         p e[0] = 3
+#         p e[1..2] = 2
+#       else
+#         p e[0] = 3
+#         p e[1] = 2
+#         p e[2] = 1
+#       end
+#     end
+#
+#     def height(e)
+#       if (e[3] == e[4] && e[3] == e[5] && e[4] == e[5])
+#         p e[3..5] = 3 * 10
+#       elsif e[3] == e[4]
+#         p e[3..4] = 2 * 10
+#         p e[5] = 3 * 10
+#       elsif e[4] == e[5]
+#         p e[3] = 2 * 10
+#         p e[4..5] = 3 * 10
+#       else
+#         p e[3] = 1 * 10
+#         p e[4] = 2 * 10
+#         p e[5] = 3 * 10
+#       end
+#     end
+#   end
+# f = Keisan.new
+# p f.tai(e)
+# p f.height(e)
