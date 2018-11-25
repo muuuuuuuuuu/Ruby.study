@@ -105,8 +105,8 @@ ww.each { |key, val|
 #   v0 + v1 # キーが重複していた場合は2つの値を加算する
 # } #=> {:a=>1, :b=>5, :c=>4}
 score3 = score.merge(score2){|key, v0, v1|
-            v0 + v1
-          }
+                              v0 + v1
+                             }
 score4 = score3.sort { |(key1, val1),(key2, val2)| val2 <=> val1 }
 # [["C", 31], ["A", 22], ["B", 13]]
 puts score4[0][0]
