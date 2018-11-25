@@ -84,17 +84,14 @@
 # {"A"=>30, "B"=>20, "C"=>30}
 
 lank2 = 4
-#previousには前回の人の値が入る
-#けど最初の人は前回の人がいないから初期値として
-#0を入れといて上げます
+
 previous2 = 0
 score2 = {"A" => 0, "B" => 0, "C" => 0}
 ww.each { |key, val|
   if previous2 < val then
-  # if文がfalseになる様に0を入れておく
+
   lank2 -= 1
-  # 前回より小さいならlank(点数)を下げる
-  # 最初は30点入っている
+
   end
   previous2 = val
   score2[key] = lank2
