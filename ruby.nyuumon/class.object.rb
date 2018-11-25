@@ -17,7 +17,7 @@
 #恐らく最初にaa[0] > bb[0]の時点でtrueになって
  # 後の式もtrueに解決で解決してしまうっぽい
 # if (aa[0] >= bb[0] && bb[0] >= cc[0]) && (cc[1] >= bb[1] && bb[1] >= aa[1]) || (bb[1] >= cc[1] && cc[1] >= aa[1])
-#   puts "A\nB\nC"
+  # puts "A\nB\nC"
 # elsif (aa[0] >= cc[0] && cc[0] >= bb[0]) && (bb[1] >= cc[1] && cc[1] >= aa[1]) || (cc[1] >= bb[1] && bb[1] >= aa[1])
 #   puts "A\nC\nB"
 # elsif (bb[0] >= aa[0] && aa[0] >= cc[0]) && (cc[1] >= aa[1] && aa[1] >= bb[1]) || (aa[1] >= cc[1] && cc[1] >= bb[1])
