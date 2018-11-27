@@ -12,3 +12,9 @@ injectは数値以外のオブジェクトに対して適用する事も可能
 number = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat'].inject('sun') { |result, s| result + s }
 p number
 "sunmontuewedthufrisat"
+-----------------------------------------------
+・配列に入っている数値の合計を求める
+a = [9, 9, 8, 6, 1]
+a.inject(:+)
+↓
+33
