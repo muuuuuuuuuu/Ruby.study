@@ -1,4 +1,4 @@
-initializeはインスタンスの初期化をしたい時に
+・initializeはインスタンスの初期化をしたい時に
 class Ruler
   attr_accessor :length
 
