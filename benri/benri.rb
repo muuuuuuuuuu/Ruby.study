@@ -154,3 +154,33 @@ end
 1 2 3 4 5
 の様にする！
 ----------------------------------------------------
+・繰り返し処理で前後の空白などを消したりする書き方
+input = gets.chomp.split(' ')
+m = input[0].to_i
+n = input[1].to_i
+↓
+4 4
+
+sum = m
+・最初は空白がいらないので、そのまま出力してOK
+print sum
+9.times do |i|
+    sum += n
+    print ' '
+    ' '←で空白出力
+    print sum
+end
+↓
+4 8 12 16 20 24 28 32 36 40
+
+・これは後ろの空白を無くしてる
+a = gets.chomp.split(' ')
+n, m = a.map(&:to_i)
+sum = n - m
+9.times do |i|
+  sum += m
+  print(sum,(' '))
+end
+print sum + m
+↑のsumには繰り返し処理の最後の出力が挿入される
+---------------------------------------------------

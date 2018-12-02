@@ -1,6 +1,6 @@
-1.upto 4 do |i|
-  print(i,(' '))
+count = gets.chomp.to_i
+a = []
+count.times do |i|
+  a[0..count] = gets.chomp()
 end
-5.upto 5 do |i|
-  print i
-end
+print a[1]
