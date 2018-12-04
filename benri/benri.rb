@@ -184,3 +184,20 @@ end
 print sum + m
 ↑のsumには繰り返し処理の最後の出力が挿入される
 ---------------------------------------------------
+・配列のインデックス番号を全部取得したい時
+ary = [5, 4, 1, 7, 3, 8]
+
+p ary.each_with_index.select{|e, i| e >= 5}.map{|e| e[1]}
+↓
+[0, 3, 5]
+
+他にも色々あるみたい、
+ary.each_with_index.each_with_object([]){|(e, i), acc| acc << i if e >= 5}
+[0, 3, 5]
+
+ary.each_with_index.select{|e, i| e >= 5}.map{|e| e[1]}
+
+ary.each_with_index.each_with_object([]){|(e, i), acc| acc << i if e >= 5}
+
+ary.flat_map.with_index{|e,i|e>=5 ? i : []}
+--------------------------------------------------
